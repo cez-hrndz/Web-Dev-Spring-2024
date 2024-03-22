@@ -1,0 +1,71 @@
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    table{
+        position: left;
+        border-collapse: collapse;
+        background-color:wheat;
+        color:black;
+    }
+
+    
+    .calanderMonth{
+      background-color: #333;
+        padding: 10px;
+      
+        text-align: center;
+    }
+    th, td{
+        font-weight: bold;
+    }
+
+    .nextButton
+    {
+        text-align: end;
+        
+       
+         
+    }
+    .peviousButton
+    {
+        text-align: start;
+        
+    
+    }

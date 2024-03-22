@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Cesar Hernandez WebDev Calander UI -->
+<!-- intagrate the calander API form google into the front page -->
+
+<!-- after the next meeting will focus on cleaning the CSS.-->
+
+<!--FEBRUARY-->
+<head>
+  <meta charset="UTF-8">
+  <link href="eventCalDesign.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML UI</title>
+ 
+</head>
+<body>
+  <header>
+    <h1>Local Event Calander </h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#">Cost</a></li>
+      <li><a href="#">Sources</a></li>
+      <li><a href="#">Time</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <body>
+      <!--the calander month class give the current month and date when interacting with it.fillout the rest of the white space-->
+      <!--add element that can keep track of the time and date of year when accessing the website -->
+    <div class = "calanderMonth">
+      <h1 abscenter="center" style= "color: lightsalmon;">
+        February 2023
+        </h1>
+      </div>
+
+        <br/>
+
+        <table color ="lightblue" align ="center" cellspacing ="25" cellpadding="25">
+       
+          <caption align="center">
+          </caption>
+            <!-- issue with the padding. it is adding another cell to the table creating 
+            the extra spacing between the month heading-->
+          <thead>
+            <th>
+              <th style= "color:black; background: antiquewhite;">Sunday</th>
+              <th style= "color:black; background: antiquewhite;">Mon</th>
+              <th style= "color:black; background: antiquewhite;">Tue</th>
+              <th style= "color:black; background: antiquewhite;">Wed</th>
+              <th style= "color:black; background: antiquewhite;">Thurs</th>
+              <th style= "color:black; background: antiquewhite;">Fri</th>
+              <th style= "color:black; background: antiquewhite;">Saturday</th>
+            </th>
+          </thead>
+
+
+          <tbody>
+            <tr>
+              <td></td>
+             <td style="opacity: .4;">31</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
+
+            <tr>
+              <td></td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+           </tr>
+
+            <tr>
+              <td></td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+            </tr>
+
+          <tr>
+            <td></td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+
+        <tr>
+          <td></td>
+          <td>24</td>
+          <td>25</td>
+          <td>26</td>
+          <td>27</td>
+          <td>28</td>
+          <td>29</td>
+          <td>30</td>
+        </tr>
+
+      </tr>
+      <tr>
+        <td></td>
+        <td>31</td>
+        <td style="opacity: .4;">1</td>
+        <td style="opacity: .4;">2</td>
+        <td style="opacity: .4;">3</td>
+        <td style="opacity: .4;">4</td>
+        <td style="opacity: .4;">5</td>
+        <td style="opacity: .4;">6</td>
+ 
+   
+
+           </tr>
+          </tbody>
+          
+        </table>
+        <!-- nextButton class when interacted move to the next month of the calander year-->
+        <!--going to be distinct to each html file -->
+        <div class= "nextButton">
+          <a href= "eventCalanderFeb.html">
+          <button style= "font-size:25px; color:rgba(81, 0, 255, 0.765); background-color: gray; border-radius: 15px" > next</button>
+        </a>
+        </div>
+        <div class= "previousButton">
+          <a href= "eventCalander.html">
+          <button style= "font-size:25px; color:rgba(81, 0, 255, 0.765); background-color: gray; border-radius: 15px" > previous</button>
+        </a>
+        </div>
+      
+  </main>
+  <br>
+
+<!-- classes of the weekday and within the weekday padding is the weekdated with an ative on
+the day that is hovered-->
+
+
+
+  
+</div>
+  <footer>
+    
+   <li><a href="#">Add Event</a></li>
+  </footer>
+</body>
+</html>
+
