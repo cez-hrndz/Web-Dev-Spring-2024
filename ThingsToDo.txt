@@ -1,0 +1,5 @@
+1. tweak calender
+2. add zoom in on specific days feature
+3. finish create event and display it on calender
+4. set up db
+5. webscrape all local events
