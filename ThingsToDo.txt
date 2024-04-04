@@ -1,6 +1,15 @@
-1. tweak calender
+1. work on the UI for the event calender using React and JS. 
+    //need to create more classes for every feature using react and js 
+    //possible other frameworks is working with bootstrap  
+
 2. add zoom in on specific days feature
+    // research ways that we can create the zooming feature to expand that days
+    //when the the day is selected we want it to display all the events going on for that day
+
 3. finish create event and display it on calender
+
 4. set up db
 5. webscrape all local events
-6.
+
+6.set up a filter feature that will search for the requirments indicated by the filter selected
+
