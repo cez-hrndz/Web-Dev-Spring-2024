@@ -1,7 +1,7 @@
 to push 
-git add .
-git commit -m "message"
-git push origin main
+1. git add .
+2. git commit -m "message"
+3. git push origin main
 
 
 
