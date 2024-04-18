@@ -1,0 +1,53 @@
+CREATE DATABASE WebDevClubSpring2024
+USE WebDevClubSpring2024
+
+-- EventType table
+CREATE TABLE EventType (
+    EventTypeID INT IDENTITY PRIMARY KEY,
+    Description NVARCHAR(255) NOT NULL
+);
+
+-- FoodType table
+CREATE TABLE FoodType (
+    FoodTypeID INT IDENTITY PRIMARY KEY,
+    Description NVARCHAR(255) NOT NULL
+);
+
+-- Location table
+CREATE TABLE Location (
+    LocationID INT IDENTITY PRIMARY KEY,
+    Name NVARCHAR(255) NOT NULL,
+    Address NVARCHAR(255) NOT NULL,
+    City NVARCHAR(100) NOT NULL,
+    Capacity INT
+);
+
+-- Community table
+CREATE TABLE Community (
+    CommunityID INT IDENTITY PRIMARY KEY,
+    Name NVARCHAR(255) NOT NULL
+);
+
+-- Event table
+CREATE TABLE Event (
+    EventID INT IDENTITY PRIMARY KEY,
+    Title NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(MAX), -- MAX indicates that the maximum storage size is 2^31-1 bytes
+    Date DATE NOT NULL,
+    Time TIME,
+    LocationID INT,
+    EventTypeID INT,
+    FoodTypeID INT,
+    FOREIGN KEY (LocationID) REFERENCES Location(LocationID),
+    FOREIGN KEY (EventTypeID) REFERENCES EventType(EventTypeID),
+    FOREIGN KEY (FoodTypeID) REFERENCES FoodType(FoodTypeID)
+);
+
+-- CommunityEvent junction table for Many-to-Many relationship between Community and Event
+CREATE TABLE CommunityEvent (
+    CommunityID INT,
+    EventID INT,
+    PRIMARY KEY (CommunityID, EventID),
+    FOREIGN KEY (CommunityID) REFERENCES Community(CommunityID),
+    FOREIGN KEY (EventID) REFERENCES Event(EventID)
+);
