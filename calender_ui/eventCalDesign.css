@@ -73,4 +73,9 @@
       padding: 20px;
       display: flex;
       justify-content:space-between;
+    }    
+
+    .eventlink{
+      text-decoration: none;
+      color: white;
     }
