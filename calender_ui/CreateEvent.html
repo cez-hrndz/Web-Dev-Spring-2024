@@ -1,11 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>make create event form</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./CSS/createEventStyle.css" rel="stylesheet" />
+    <title>Create Event</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">header</div>
+      <div class="body">
+        <form action="/submit-registration" method="post" id="eventForm">
+          <div class="form">
+            <div class="heading">
+              <h1>Create Event</h1>
+            </div>
+            <div class="input">
+              <label><b>Event Name: </b></label>
+              <input type="text" name="eventName" required />
+            </div>
+            <div class="input">
+              <label><b>Event Host Name: </b></label>
+              <input type="text" name="hostName" required />
+            </div>
+            <div class="input">
+              <label><b>Event Host Email: </b></label>
+              <input type="text" name="hostEmail" required />
+            </div>
+            <div class="input">
+                <label><b>Event Time: </b></label>
+                <input type="text" name="eventDate" required />
+            </div>
+            <div class="input">
+                <label><b>Event Date: </b></label>
+                <input type="date" name="eventDate" required />
+            </div>
+            <div class="input desc">
+                <label><b>Event Description: </b></label>
+                <textarea rows="4" cols="50" name="eventDesc" form="eventForm"></textarea>
+              </div>
+            <div class="input">
+                <label><b>Event Photo: </b></label>
+                <input type="file" name="eventDate" required />
+            </div>
+
+            
+            
+            </div>
+            <div class="buttons">
+              <input type="submit" value="Create" />
+              <input type="reset" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="footer">footer</div>
+    </div>
+  </body>
 </html>
