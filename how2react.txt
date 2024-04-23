@@ -1,0 +1,2 @@
+1. need to have react and node.js
+2. terminal npm run dev
