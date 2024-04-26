@@ -48,9 +48,14 @@ html {
 
 .desc {
   align-items: center;
+
 }
 
 .home {
   text-decoration: none;
   color: black;
+}
+
+.desc label {
+  width: 200px
 }

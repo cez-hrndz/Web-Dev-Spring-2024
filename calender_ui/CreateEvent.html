@@ -32,6 +32,25 @@
               <input type="text" name="hostEmail" required />
             </div>
             <div class="input">
+              <label><b>Address: </b></label>
+              <input type="text" name="address" required />
+            </div>
+            <div class="input">
+              <label><b>Event Cost: </b></label>
+              <select name="eventcost" id="typeopt">
+                <option value="free">Free</option>
+                <option value="paid">Paid</option>
+              </select>
+            </div>
+            <div class="input">
+              <label><b>Food: </b></label>
+              <select name="food" id="typeopt">
+                <option value="free">No Food</option>
+                <option value="paid">Free Food</option>
+                <option value="paid">Paid Food</option>
+              </select>
+            </div>
+            <div class="input">
                 <label><b>Event Time: </b></label>
                 <input type="text" name="eventDate" required />
             </div>
@@ -39,13 +58,17 @@
                 <label><b>Event Date: </b></label>
                 <input type="date" name="eventDate" required />
             </div>
+            <div class="input">
+              <label><b>Event Photo: </b></label>
+              <input type="file" name="eventDate" />
+          </div>
             <div class="input desc">
                 <label><b>Event Description: </b></label>
-                <textarea rows="4" cols="50" name="eventDesc" form="eventForm"></textarea>
+                <textarea rows="4" cols="50" name="eventDesc" form="eventForm" maxlength="500"></textarea>
               </div>
-            <div class="input">
-                <label><b>Event Photo: </b></label>
-                <input type="file" name="eventDate" required />
+            <div class="input desc">
+              <label><b>Special Requirements: </b></label>
+              <textarea rows="4" cols="50" name="eventReqs" form="eventForm" maxlength="500"></textarea>
             </div>
 
             
