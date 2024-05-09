@@ -3,8 +3,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="header">Header</div>
-      <div className="filters">Filters</div>
+      <div className="header"><h1>OpenSpace</h1> <ul> 
+        </ul>
+        <li>Events</li>
+        <li>Create</li>
+        <li>About</li>
+          </div>
+      <div className="filters">Filters
+      </div>
       <div className="cal">
         <div className="row">
           <div className="day" id="0"></div>

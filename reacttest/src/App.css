@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+.App {
+    height: 100%;
+    width: 100%;
+    min-width: 430px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header li {
+    padding-right: 20px;
+    list-style: none;
+}
+
+.header ul {
+    margin-left: auto;
+}
+.filters {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cal {
+    padding: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display:flex;
+    min-height: 50px;
+    width: 100%;
+    height: calc(60vw/7);
+}
+.day {
+    width: 14%;
+    min-width: 50px;
+    height: 100%;
+    min-height: 44px;
+    border-style: solid;
+}
+
+.newEvent{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer {
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
