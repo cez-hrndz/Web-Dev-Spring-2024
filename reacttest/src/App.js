@@ -1,13 +1,14 @@
 import "./App.css";
-
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <div className="header"><h1>OpenSpace</h1> <ul> 
-        </ul>
-        <li>Events</li>
-        <li>Create</li>
-        <li>About</li>
+      <div className="header"><h1>OpenSpace</h1>
+        <ul></ul>
+          <li>Events</li>
+          <li>Create</li>
+          <li>About</li>
+        
           </div>
       <div className="filters">Filters
       </div>
