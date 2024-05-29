@@ -4,10 +4,13 @@ function App() {
   return (
     <div className="App">
       <div className="header"><h1>OpenSpace</h1>
-        <ul></ul>
+        <ul>        </ul>
+        <Router>
+          <Switch></Switch>
           <li>Events</li>
           <li>Create</li>
           <li>About</li>
+          </Router>
         
           </div>
       <div className="filters">Filters
